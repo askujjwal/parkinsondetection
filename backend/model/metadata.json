@@ -1,0 +1,107 @@
+{
+  "feature_names": [
+    "MDVP:Fo(Hz)",
+    "MDVP:Fhi(Hz)",
+    "MDVP:Flo(Hz)",
+    "MDVP:Jitter(%)",
+    "MDVP:Jitter(Abs)",
+    "MDVP:RAP",
+    "MDVP:PPQ",
+    "Jitter:DDP",
+    "MDVP:Shimmer",
+    "MDVP:Shimmer(dB)",
+    "Shimmer:APQ3",
+    "Shimmer:APQ5",
+    "MDVP:APQ",
+    "Shimmer:DDA",
+    "NHR",
+    "HNR",
+    "RPDE",
+    "DFA",
+    "spread1",
+    "spread2",
+    "D2",
+    "PPE"
+  ],
+  "shap_importance": {
+    "spread2": 1.1134371757507324,
+    "MDVP:Fhi(Hz)": 0.9055607318878174,
+    "spread1": 0.886795163154602,
+    "PPE": 0.7273346185684204,
+    "D2": 0.6987724304199219,
+    "DFA": 0.502234697341919,
+    "MDVP:Fo(Hz)": 0.48617324233055115,
+    "MDVP:RAP": 0.3315924406051636,
+    "NHR": 0.2634747624397278,
+    "MDVP:Shimmer(dB)": 0.2591317892074585,
+    "MDVP:APQ": 0.2510576546192169,
+    "Shimmer:APQ5": 0.2447485625743866,
+    "MDVP:Jitter(%)": 0.24429422616958618,
+    "MDVP:Jitter(Abs)": 0.20132087171077728,
+    "HNR": 0.13534370064735413,
+    "RPDE": 0.13309083878993988,
+    "Shimmer:APQ3": 0.12053374201059341,
+    "MDVP:PPQ": 0.0706026628613472,
+    "MDVP:Flo(Hz)": 0.05497441440820694,
+    "Jitter:DDP": 0.04227437451481819,
+    "MDVP:Shimmer": 0.029788818210363388,
+    "Shimmer:DDA": 0.02717098407447338
+  },
+  "model_comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.7187902187902189,
+      "recall": 0.7843010752688171,
+      "mcc": 0.25130374417618356,
+      "auc": 0.6935961768219833
+    },
+    "SVM (RBF)": {
+      "accuracy": 0.68005148005148,
+      "recall": 0.7828494623655914,
+      "mcc": 0.18683669212842074,
+      "auc": 0.7350418160095579
+    },
+    "Random Forest": {
+      "accuracy": 0.7646074646074646,
+      "recall": 0.8929569892473118,
+      "mcc": 0.21931913464766026,
+      "auc": 0.8055047789725208
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.7712998712998713,
+      "recall": 0.9191935483870968,
+      "mcc": 0.28384980393118997,
+      "auc": 0.8551164874551972
+    },
+    "XGBoost": {
+      "accuracy": 0.7849420849420848,
+      "recall": 0.8929569892473117,
+      "mcc": 0.3404858481263572,
+      "auc": 0.7831212664277181
+    }
+  },
+  "best_model_by_recall": "Gradient Boosting",
+  "feature_descriptions": {
+    "MDVP:Fo(Hz)": "Average vocal fundamental frequency",
+    "MDVP:Fhi(Hz)": "Maximum vocal fundamental frequency",
+    "MDVP:Flo(Hz)": "Minimum vocal fundamental frequency",
+    "MDVP:Jitter(%)": "Variation in fundamental frequency (%)",
+    "MDVP:Jitter(Abs)": "Absolute variation in fundamental frequency",
+    "MDVP:RAP": "Relative average perturbation",
+    "MDVP:PPQ": "5-point period perturbation quotient",
+    "Jitter:DDP": "Average absolute difference of consecutive differences (period)",
+    "MDVP:Shimmer": "Variation in amplitude",
+    "MDVP:Shimmer(dB)": "Variation in amplitude (dB)",
+    "Shimmer:APQ3": "3-point amplitude perturbation quotient",
+    "Shimmer:APQ5": "5-point amplitude perturbation quotient",
+    "MDVP:APQ": "11-point amplitude perturbation quotient",
+    "Shimmer:DDA": "Average absolute differences (amplitude)",
+    "NHR": "Noise-to-harmonic ratio",
+    "HNR": "Harmonic-to-noise ratio",
+    "RPDE": "Recurrence period density entropy",
+    "DFA": "Detrended fluctuation analysis",
+    "spread1": "Nonlinear measure of fundamental frequency variation",
+    "spread2": "Nonlinear measure of fundamental frequency variation",
+    "D2": "Correlation dimension",
+    "PPE": "Pitch period entropy (most predictive)"
+  }
+}

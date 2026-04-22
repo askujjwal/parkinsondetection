@@ -1,0 +1,8 @@
+2026-02-22T11:34:18.381Z [network][GET 0] http://localhost:8000/metadata
+  response: Request failed: Failed to fetch
+2026-02-22T11:36:12.114Z [network][POST 0] http://localhost:8000/predict
+  request: {"mdvp_fo":120.012,"mdvp_fhi":157.316,"mdvp_flo":75.008,"mdvp_jitter_pct":0.00784,"mdvp_jitter_abs":0.00007,"mdvp_rap":0.0037,"mdvp_ppq":0.00554,"jitter_ddp":0.01109,"mdvp_shimmer":0.04374,"mdvp_shimmer_db":0.426,"shimmer_apq3":0.02182,"shimmer_apq5":0.0313,"mdvp_apq":0.02971,"shimmer_dda":0.06545,"nhr":0.02211,"hnr":21.033,"rpde":0.414783,"dfa":0.815285,"spread1":-4.813031,"spread2":0.266482,"d2":2.301442,"ppe":0.284654}
+  response: Request failed: Failed to fetch
+2026-02-22T11:36:56.462Z [network][POST 0] http://localhost:8000/predict
+  request: {"mdvp_fo":120.012,"mdvp_fhi":157.316,"mdvp_flo":75.008,"mdvp_jitter_pct":0.00764,"mdvp_jitter_abs":0.000044,"mdvp_rap":0.00358,"mdvp_ppq":0.00554,"jitter_ddp":0.01109,"mdvp_shimmer":0.04388,"mdvp_shimmer_db":0.436,"shimmer_apq3":0.02195,"shimmer_apq5":0.0313,"mdvp_apq":0.02971,"shimmer_dda":0.06545,"nhr":0.02223,"hnr":21.041,"rpde":0.414792,"dfa":0.815296,"spread1":-4.813043,"spread2":0.266482,"d2":2.301442,"ppe":0.284654}
+  response: Request failed: Failed to fetch
